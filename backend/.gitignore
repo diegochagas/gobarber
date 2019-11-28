@@ -9,6 +9,7 @@
 
 # dependencies
 /node_modules
+.env
 
 # adobe
 /Adobe After Effects Auto-Save
