@@ -12,7 +12,7 @@ export function* signIn({ payload }) {
   try {
     const response = yield call(api.post, 'sessions', {
       email,
-      password
+      password,
     });
 
     const { token, user } = response.data;
@@ -40,11 +40,14 @@ export function* signUp({ payload }) {
     const { name, email, password } = payload;
 
     yield call(api.post, 'users', {
-      name, email, password, provider: true
+      name,
+      email,
+      password,
+      provider: true,
     });
 
     history.push('/');
-  } catch(err) {
+  } catch (err) {
     toast.error('SignUp fail, verify your fields!');
 
     yield put(signFailure());
@@ -61,8 +64,13 @@ export function setToken({ payload }) {
   }
 }
 
+export function signOut() {
+  history.push('/');
+}
+
 export default all([
   takeLatest('persist/REHYDRATE', setToken),
   takeLatest('@auth/SIGN_IN_REQUEST', signIn),
   takeLatest('@auth/SIGN_UP_REQUEST', signUp),
+  takeLatest('@auth/SIGN_OUT', signOut),
 ]);
