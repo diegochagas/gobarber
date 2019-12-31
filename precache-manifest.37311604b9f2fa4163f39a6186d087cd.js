@@ -1,27 +1,27 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "f3ec52733aae609f7371ec3e00f205e3",
+    "revision": "eee3b2371cfe8aa79c968444574aa14b",
     "url": "/gobarber/index.html"
   },
   {
-    "revision": "365f31302ae56b0685a7",
+    "revision": "846f057ec5226929d95b",
     "url": "/gobarber/static/css/2.07b170e0.chunk.css"
   },
   {
-    "revision": "365f31302ae56b0685a7",
-    "url": "/gobarber/static/js/2.8e6c12e3.chunk.js"
+    "revision": "846f057ec5226929d95b",
+    "url": "/gobarber/static/js/2.89e45a7f.chunk.js"
   },
   {
     "revision": "ac599af6ea258d0f22d3630cae378530",
-    "url": "/gobarber/static/js/2.8e6c12e3.chunk.js.LICENSE"
+    "url": "/gobarber/static/js/2.89e45a7f.chunk.js.LICENSE"
   },
   {
-    "revision": "0f9d1469f41e8d5caa24",
-    "url": "/gobarber/static/js/main.7332c7ee.chunk.js"
+    "revision": "e0af74c4c873cbc20653",
+    "url": "/gobarber/static/js/main.767e3a49.chunk.js"
   },
   {
-    "revision": "d2ad8a30f60fb4deaabc",
-    "url": "/gobarber/static/js/runtime-main.95f48b39.js"
+    "revision": "e7dd4d3ec32ed74bdc5e",
+    "url": "/gobarber/static/js/runtime-main.e94dc22f.js"
   },
   {
     "revision": "a3c4dca3142c09d9c87ba896542e4034",
