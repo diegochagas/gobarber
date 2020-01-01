@@ -28,3 +28,13 @@ start redis
 
 ```docker start 954476c87487```
 
+
+## mobile start
+
+mobile reactotron 
+
+```adb reverse tcp:9090 tcp:9090```
+
+mobile 
+
+```npx react-native run-android```
