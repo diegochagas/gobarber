@@ -28,7 +28,6 @@ start redis
 
 ```docker start 954476c87487```
 
-
 ## mobile start
 
 mobile reactotron 
