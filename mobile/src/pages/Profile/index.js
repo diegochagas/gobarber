@@ -7,11 +7,13 @@ import {
   Container,
   Form,
   FormInput,
+  LogoutButton,
   Separator,
   SubmitButton,
   Title,
 } from './styles';
 import {updateProfileRequest} from '~/store/modules/user/actions';
+import {signOut} from '~/store/modules/auth/actions';
 
 export default function Profile() {
   const dispatch = useDispatch();
@@ -44,6 +46,10 @@ export default function Profile() {
         confirmPassword,
       }),
     );
+  }
+
+  function handleLogout() {
+    dispatch(signOut());
   }
 
   return (
@@ -112,6 +118,8 @@ export default function Profile() {
           />
 
           <SubmitButton onPress={handleSubmit}>Update profile</SubmitButton>
+
+          <LogoutButton onPress={handleLogout}>Leave GoBarber</LogoutButton>
         </Form>
       </Container>
     </Background>
